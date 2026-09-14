@@ -38,7 +38,7 @@ git add .
 git commit -m "Create GT Movies Store portfolio"
 git branch -M main
 gh repo create gt-movies-store-portfolio --public --source=. --remote=origin --push
-gh api -X POST repos/akshajnad/gt-movies-store-portfolio/pages -f source[branch]=main -f source[path]=/
+gh api -X POST repos/akshajnad/gt-movies-store-portfolio/pages -f 'source[branch]=main' -f 'source[path]=/'
 ```
 
 If the Pages API reports that Pages is already configured, open the repository's **Settings → Pages** and confirm **Deploy from a branch**, `main`, and `/ (root)`.
