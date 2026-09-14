@@ -33,6 +33,7 @@ Open `http://localhost:8000`.
 ## Deploy with GitHub Pages
 
 ```bash
+gh auth login
 git init
 git add .
 git commit -m "Create GT Movies Store portfolio"
@@ -42,3 +43,9 @@ gh api -X POST repos/akshajnad/gt-movies-store-portfolio/pages -f 'source[branch
 ```
 
 If the Pages API reports that Pages is already configured, open the repository's **Settings → Pages** and confirm **Deploy from a branch**, `main`, and `/ (root)`.
+
+After `https://akshajnad.github.io/gt-movies-store-portfolio/` returns successfully, create the course submission file from this directory:
+
+```bash
+printf '%s\n' 'https://akshajnad.github.io/gt-movies-store-portfolio/' > portfolio.txt
+```
