@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Akshaj Nadimpalli's GT Movies Store project portfolio — a full-stack Django 5 movie storefront.">
+  <meta name="theme-color" content="#101820">
+  <title>GT Movies Store · Akshaj Nadimpalli</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101820'/%3E%3Cpath d='M16 20h32v24H16z' fill='%23b3a369'/%3E%3Cpath d='M22 16v32M42 16v32' stroke='%23fff' stroke-width='4' stroke-dasharray='5 5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="GT Movies Store home">
+        <span class="brand-mark" aria-hidden="true">GT</span>
+        <span>Movies Store</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#stories">User stories</a>
+        <a href="#reflection">Reflection</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Akshaj Nadimpalli · Georgia Tech project</p>
+          <h1>GT Movies<br><span>Store</span></h1>
+          <p class="hero-subtitle">A full-stack Django movie storefront featuring authentication, reviews, shopping cart sessions, purchases, order history, administration, and cloud deployment.</p>
+          <div class="hero-actions">
+            <a class="button button-disabled" role="link" aria-disabled="true" data-placeholder="DEPLOYED_APP_URL">View Live Project</a>
+            <a class="button button-secondary" href="https://github.com/akshajnad/moviesstore" target="_blank" rel="noreferrer">View Source Code <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="link-note"><strong>Live link pending:</strong> replace <code>DEPLOYED_APP_URL</code> in this file once available.</p>
+        </div>
+
+        <aside class="project-summary" aria-label="Project at a glance">
+          <div class="summary-top">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Completed course project</span>
+          </div>
+          <dl>
+            <div><dt>Framework</dt><dd>Django 5</dd></div>
+            <div><dt>Architecture</dt><dd>Model–View–Template</dd></div>
+            <div><dt>Database</dt><dd>SQLite + Django ORM</dd></div>
+            <div><dt>Deployment</dt><dd>PythonAnywhere</dd></div>
+          </dl>
+          <div class="summary-footer">21 of 21 required user stories implemented</div>
+        </aside>
+      </div>
+      <div class="hero-rule" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="shell split-heading">
+        <div>
+          <p class="eyebrow">01 · Project overview</p>
+          <h2>A storefront built from the database up.</h2>
+        </div>
+        <div class="body-copy">
+          <p>GT Movies Store is a full-stack web application where users can browse and search movies, create an account, write reviews, add titles to a cart, complete purchases, and revisit earlier orders.</p>
+          <p>I built it to apply Django’s core patterns to a complete user journey instead of a collection of isolated exercises. Administrators can manage users, movies, reviews, orders, and items through Django’s built-in administration interface.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="features">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">02 · Features</p>
+          <h2>One connected experience, five functional areas.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-number">01</span><h3>Movies</h3><ul><li>Browse available movies</li><li>Search by title</li><li>View details and uploaded images</li></ul></article>
+          <article class="feature-card"><span class="feature-number">02</span><h3>Accounts</h3><ul><li>Register an account</li><li>Log in and out</li><li>See authentication-aware navigation</li></ul></article>
+          <article class="feature-card"><span class="feature-number">03</span><h3>Reviews</h3><ul><li>Create and read reviews</li><li>Edit or delete your own reviews</li><li>Report inappropriate reviews</li></ul></article>
+          <article class="feature-card"><span class="feature-number">04</span><h3>Shopping</h3><ul><li>Add titles and quantities</li><li>Keep a session-based cart</li><li>Clear cart and calculate totals</li><li>Purchase and view order history</li></ul></article>
+          <article class="feature-card"><span class="feature-number">05</span><h3>Administration</h3><ul><li>Manage users and movies</li><li>Manage reviews</li><li>Manage orders and items</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="screens">
+      <div class="shell">
+        <div class="section-heading heading-row">
+          <div><p class="eyebrow">03 · Application screens</p><h2>Key moments in the user journey.</h2></div>
+          <p class="placeholder-key"><span aria-hidden="true"></span> Placeholders — not application screenshots</p>
+        </div>
+        <div class="screens-grid">
+          <figure><img src="assets/screenshots/home.svg" alt="Placeholder for the GT Movies Store home page screenshot" width="1200" height="750"><figcaption><strong>Home page</strong><span>Entry point and project information</span></figcaption></figure>
+          <figure><img src="assets/screenshots/movies-search.svg" alt="Placeholder for the movies listing and search screenshot" width="1200" height="750"><figcaption><strong>Movies & search</strong><span>Browse and title search</span></figcaption></figure>
+          <figure><img src="assets/screenshots/movie-reviews.svg" alt="Placeholder for the movie detail and reviews screenshot" width="1200" height="750"><figcaption><strong>Movie & reviews</strong><span>Details, images, and review CRUD</span></figcaption></figure>
+          <figure><img src="assets/screenshots/cart.svg" alt="Placeholder for the shopping cart screenshot" width="1200" height="750"><figcaption><strong>Cart</strong><span>Quantities, totals, and checkout</span></figcaption></figure>
+          <figure><img src="assets/screenshots/orders.svg" alt="Placeholder for the order history screenshot" width="1200" height="750"><figcaption><strong>Orders</strong><span>Persistent purchase history</span></figcaption></figure>
+          <figure><img src="assets/screenshots/admin.svg" alt="Placeholder for the Django Admin screenshot" width="1200" height="750"><figcaption><strong>Django Admin</strong><span>Application data management</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="architecture">
+      <div class="shell">
+        <div class="section-heading"><p class="eyebrow">04 · Architecture</p><h2>Django MVT, mapped to the request cycle.</h2></div>
+        <div class="flow" aria-label="Browser to URLs to views to models and database to templates to browser">
+          <span>Browser</span><b aria-hidden="true">→</b><span>URLs</span><b aria-hidden="true">→</b><span>Views</span><b aria-hidden="true">→</b><span>Models / DB</span><b aria-hidden="true">→</b><span>Templates</span><b aria-hidden="true">→</b><span>Browser</span>
+        </div>
+
+        <div class="architecture-grid">
+          <div>
+            <h3>Project apps</h3>
+            <div class="app-grid">
+              <article><code>home</code><p>Project information and landing content.</p></article>
+              <article><code>movies</code><p>Catalog, search, details, and reviews.</p></article>
+              <article><code>accounts</code><p>Registration and authentication flows.</p></article>
+              <article><code>cart</code><p>Session cart, checkout, orders, and history.</p></article>
+            </div>
+          </div>
+          <div>
+            <h3>Main model relationships</h3>
+            <div class="model-map" aria-label="Main model relationships">
+              <p><span>User</span><b>→</b><span>Orders</span></p>
+              <p><span>Order</span><b>→</b><span>Items</span><b>→</b><span>Movie</span></p>
+              <p><span>User</span><b>→</b><span>Reviews</span><b>→</b><span>Movie</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="shell">
+        <div class="section-heading"><p class="eyebrow">05 · Development process</p><h2>Built in small, working increments.</h2></div>
+        <ol class="timeline">
+          <li><span>01</span><p>Django project/app setup</p></li><li><span>02</span><p>Templates and static files</p></li><li><span>03</span><p>Movie models and admin</p></li><li><span>04</span><p>Database queries and search</p></li><li><span>05</span><p>Authentication</p></li><li><span>06</span><p>Review CRUD and authorization</p></li><li><span>07</span><p>Sessions and cart</p></li><li><span>08</span><p>Orders and items</p></li><li><span>09</span><p>Checkout and order history</p></li><li><span>10</span><p>PythonAnywhere deployment</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="technology">
+      <div class="shell split-heading">
+        <div><p class="eyebrow">06 · Technologies</p><h2>A focused, practical stack.</h2></div>
+        <ul class="tech-list" aria-label="Technologies used">
+          <li>Python</li><li>Django 5</li><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>Django Template Language</li><li>SQLite</li><li>Django ORM</li><li>Django Authentication</li><li>Django Sessions</li><li>Pillow</li><li>Git</li><li>GitHub</li><li>PythonAnywhere</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="stories">
+      <div class="shell">
+        <div class="section-heading heading-row"><div><p class="eyebrow">07 · User stories</p><h2>All 21 requirements implemented.</h2></div><p class="completion"><strong>21 / 21</strong><span>complete</span></p></div>
+        <ol class="story-grid">
+          <li>App information / about</li><li>Account registration</li><li>Login</li><li>Movie listing</li><li>Movie title search</li><li>Shopping cart</li><li>Add movie quantities</li><li>Create reviews</li><li>Clear cart</li><li>Edit reviews</li><li>Delete reviews</li><li>Read reviews</li><li>Movie details</li><li>Order history</li><li>Browser / internet access</li><li>Responsive GUI</li><li>Admin user management</li><li>Admin movie management</li><li>Admin review management</li><li>Admin order management</li><li>Report inappropriate reviews</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-reflection" id="reflection">
+      <div class="shell reflection-grid">
+        <div><p class="eyebrow">08 · What I learned</p><h2>Connecting the layers made the framework click.</h2></div>
+        <div class="reflection-copy">
+          <p>This project helped me understand how Django’s MVT architecture connects a browser request to URLs, views, ORM queries, models, and templates. Designing foreign-key relationships for movies, reviews, orders, and items made database modeling feel much more concrete.</p>
+          <p>I also got practical experience with GET and POST requests, forms and CSRF protection, authentication versus authorization, session-based state, and full CRUD workflows. Using Git and GitHub throughout the project—and then deploying it to the cloud—showed me how the pieces of a web application move from local development to something other people can use.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section links-section" id="links">
+      <div class="shell links-card">
+        <p class="eyebrow">09 · Project links</p>
+        <h2>Explore the application and its code.</h2>
+        <p>The application is hosted separately from this portfolio.</p>
+        <div class="hero-actions centered">
+          <a class="button button-disabled" role="link" aria-disabled="true" data-placeholder="DEPLOYED_APP_URL">View Live Project</a>
+          <a class="button button-light" href="https://github.com/akshajnad/moviesstore" target="_blank" rel="noreferrer">View Source Code <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="link-note light-note">Replace <code>DEPLOYED_APP_URL</code> when the PythonAnywhere address is available.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner"><p>GT Movies Store · Akshaj Nadimpalli</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></div>
+  </footer>
+</body>
+</html>
