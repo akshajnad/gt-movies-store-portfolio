@@ -2,25 +2,17 @@
 
 A static, single-page portfolio for Akshaj Nadimpalli's Django 5 GT Movies Store course project. It is intentionally separate from the Django application and is ready for GitHub Pages.
 
-## Replace the live application placeholder
+## Live application
 
-Open `index.html` and replace both instances of the disabled live-project link:
-
-```html
-<a class="button button-disabled" role="link" aria-disabled="true" data-placeholder="DEPLOYED_APP_URL">View Live Project</a>
-```
-
-with:
-
-```html
-<a class="button" href="https://YOUR-PYTHONANYWHERE-URL" target="_blank" rel="noreferrer">View Live Project <span aria-hidden="true">↗</span></a>
-```
-
-Then remove or update the nearby “Live link pending” note.
+The completed Django application is available at <https://akshajnadn.pythonanywhere.com/>.
 
 ## Replace screenshot placeholders
 
 Add real screenshots under `assets/screenshots/` using the existing filenames (`home.svg`, `movies-search.svg`, `movie-reviews.svg`, `cart.svg`, `orders.svg`, and `admin.svg`) or update the matching `src` values in `index.html`. Keep the supplied `width` and `height` attributes to prevent layout shift.
+
+## Video demonstration
+
+The supplied screen recording was converted to a web-friendly H.264 MP4 and is embedded with native browser controls at `assets/video/gt-movies-store-demo.mp4`. Its poster image is stored beside it. Replace those two files with the same filenames to update the recording without changing the page markup.
 
 ## Preview locally
 

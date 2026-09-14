@@ -40,7 +40,7 @@
   }
 
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
-    const revealTargets = document.querySelectorAll('.feature-card, .screens-grid figure, .timeline li, .story-grid li');
+    const revealTargets = document.querySelectorAll('.feature-card, .journey-grid article, .screens-grid figure, .timeline li, .process-notes article, .story-grid li');
     revealTargets.forEach((item) => item.setAttribute('data-reveal', ''));
     const revealObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
